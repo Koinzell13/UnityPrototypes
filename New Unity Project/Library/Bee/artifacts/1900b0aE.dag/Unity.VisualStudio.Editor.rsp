@@ -108,7 +108,7 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
--r:"C:/Users/willw/Documents/School/GDS212/Prototyping/New Unity Project/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
+-r:"C:/Users/willw/Documents/School/GDS212/Prototyping/UnityPrototypes/New Unity Project/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll"
 -r:"E:/Program Files (x86)/Editor/Data/Managed/UnityEditor.Graphs.dll"
 -r:"E:/Program Files (x86)/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
 -r:"E:/Program Files (x86)/Editor/Data/Managed/UnityEngine/UnityEditor.DeviceSimulatorModule.dll"
