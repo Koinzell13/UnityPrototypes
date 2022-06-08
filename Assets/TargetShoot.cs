@@ -24,7 +24,7 @@ public class TargetShoot : MonoBehaviour
                 if(target != null)
                 {
                     target.Hit();
-                    
+                    FindObjectOfType<Score>().UpdateScore(50);
                 }
             }
         }
