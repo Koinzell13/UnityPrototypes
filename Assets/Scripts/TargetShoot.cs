@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class TargetShoot : MonoBehaviour
 {
+    public AudioSource audio;
     [SerializeField] Camera cam;
 
     void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        
     }
     // Update is called once per frame
     void Update()
@@ -23,6 +25,7 @@ public class TargetShoot : MonoBehaviour
 
                 if(target != null)
                 {
+                    audio.Play();
                     target.Hit();
                     FindObjectOfType<Score>().UpdateScore(50);
                 }
