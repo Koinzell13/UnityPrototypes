@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
-    public float timeRemaining = 10;
+    public float timeRemaining;
     public string secondLevel;
+    
 
     void Start()
     {
-        Cursor.visible = true;
-        Cursor.lockState = CursorLockMode.None;
-    }    
-        
+
+    }
+
     void Update()
     {
         if (timeRemaining > 0)
@@ -29,6 +31,8 @@ public class GameController : MonoBehaviour
 
     void EndGame()
     {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene(secondLevel);
     }
 

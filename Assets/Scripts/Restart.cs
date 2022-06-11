@@ -7,7 +7,14 @@ public class Restart : MonoBehaviour
 {
     public string zeroLevel;
     public string firstLevel;
+
     // Start is called before the first frame update
+
+    void Start()
+    {
+
+    }
+
     public void RestartGame()
     {
         SceneManager.LoadScene(zeroLevel);
@@ -21,6 +28,14 @@ public class Restart : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("Quitting");
+        Debug.Log("Quit");
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
     }
 }
